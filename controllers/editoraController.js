@@ -1,8 +1,8 @@
 const {json} = require("express");
 const db = require("../database/connection");
 
-module.export={
-    async  listarEditar(request, response){
+module.exports = {
+    async listarEditora(request, response){
         try{
             return response.status(200).json({confirma: 'Editora'});
         } catch(error){

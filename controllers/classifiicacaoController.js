@@ -1,8 +1,8 @@
 const {json} = require("express");
 const db = require("../database/connection");
 
-module.export={
-    async  listarClassificacao(request, response){
+module.exports = {
+    async listarClassificacao(request, response){
         try{
             return response.status(200).json({confirma: 'Classificacao'});
         } catch(error){

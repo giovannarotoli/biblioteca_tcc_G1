@@ -1,10 +1,10 @@
 const {json} = require("express");
 const db = require("../database/connection");
 
-module.export={
-    async  listarUsuarios(request, response){
-        try{
-            return response.status(200).json({confirma: 'Usuarios'});
+module.exports = {
+    async listarLivros(request, response){
+        try {
+            return response.status(200).json({confirma: 'Livros'});
         } catch(error){
             return response.status(500).json({confirma: 'Erro', message: error});
         }
