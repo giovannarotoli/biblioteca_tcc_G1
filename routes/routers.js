@@ -23,7 +23,7 @@ router.get('/autor', autorController.listarAutor);
 //editar
 //excluir
 
-router.get('/livro', livrosController.listarLivros);
+router.get('/livros', livrosController.listarLivros);
 //cadastrar
 //editar
 //excluir
