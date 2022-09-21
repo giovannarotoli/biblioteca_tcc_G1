@@ -14,41 +14,49 @@ const usuariosController = require('../controllers/usuariosController');
 // definição das rotas 
 
 router.get('/autorlivro', autorLivroController.listarAutorLivro);
+// router.post('/autorlivro', autorLivroController.create);
 //cadastrar
 //editar
 //excluir
 
 router.get('/autor', autorController.listarAutor);
+// router.post('/autor', autorController.create);
 //cadastrar
 //editar
 //excluir
 
 router.get('/livros', livrosController.listarLivros);
+router.post('/livros', livrosController.create);
 //cadastrar
 //editar
 //excluir
 
 router.get('/classificacao', classificacaoController.listarClassificacao);
+// router.post('/classificacao', classificacaoController.create);
 //cadastrar
 //editar
 //excluir
 
 router.get('/editora', editoraController.listarEditora);
+// router.post('/editora', editoraController.create);
 //cadastrar
 //editar
 //excluir
 
 router.get('/emprestimolivro', emprestimoLivroController.listarEmprestimoLivro);
+// router.post('/emprestimolivro', emprestimoLivroController.create);
 //cadastrar
 //editar
 //excluir
 
 router.get('/reservalivro', reservaLivroController.listarReserva);
+router.post('/reservalivro', reservaLivroController.create);
 //cadastrar
 //editar
 //excluir
 
 router.get('/usuarios', usuariosController.listarUsuarios);
+router.post('/usuarios', usuariosController.create);
 //cadastrar
 //editar
 //excluir
